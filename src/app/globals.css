@@ -1,0 +1,173 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@keyframes newRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes oldLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes newLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes oldRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-newRight {
+  animation: newRight 0.7s ease-in-out forwards;
+}
+
+.animate-oldLeft {
+  animation: oldLeft 0.7s ease-in-out forwards;
+}
+
+.animate-newLeft {
+  animation: newLeft 0.7s ease-in-out forwards;
+}
+
+.animate-oldRight {
+  animation: oldRight 0.7s ease-in-out forwards;
+}
+@keyframes textNext {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes textPrev {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.animate-text-next {
+  animation: textNext 0.5s ease-in-out;
+}
+.animate-text-prev {
+  animation: textPrev 0.5s ease-in-out;
+}
+@keyframes slideIcons {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.animate-slide-icons {
+  animation: slideIcons 0.5s ease-in-out;
+}
+@keyframes oldTextNext {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+}
+
+@keyframes newTextNext {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes oldTextPrev {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes newTextPrev {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-old-next {
+  animation: oldTextNext 0.5s ease-in-out forwards;
+}
+
+.animate-new-next {
+  animation: newTextNext 0.5s ease-in-out forwards;
+}
+
+.animate-old-prev {
+  animation: oldTextPrev 0.5s ease-in-out forwards;
+}
+
+.animate-new-prev {
+  animation: newTextPrev 0.5s ease-in-out forwards;
+}
+
+@keyframes slideIcons {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-icons {
+  animation: slideIcons 0.5s ease-in-out;
+}
